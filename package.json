@@ -1,0 +1,38 @@
+{
+  "name": "id.ehis.gay",
+  "version": "0.1.0",
+  "description": "SDK for the id.ehis.gay dashboard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehshit/id.ehis.gay-sdk-npm.git"
+  },
+  "homepage": "https://github.com/ehshit/id.ehis.gay-sdk-npm#readme",
+  "bugs": { "url": "https://github.com/ehshit/id.ehis.gay-sdk-npm/issues" },
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./nitro": {
+      "types": "./dist/nitro.d.ts",
+      "import": "./dist/nitro.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "h3": ">=1"
+  },
+  "peerDependenciesMeta": {
+    "h3": { "optional": true }
+  },
+  "devDependencies": {
+    "h3": "^1.15.0",
+    "typescript": "^5"
+  }
+}
